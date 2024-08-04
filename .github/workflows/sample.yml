@@ -16,7 +16,7 @@ jobs:
   UAT:
     runs-on: ubuntu-latest
     needs:
-      _ QA
+      - QA
     steps:
       - run: echo HELLO
 
