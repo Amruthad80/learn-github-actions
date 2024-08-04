@@ -1,9 +1,22 @@
 name: learn-github-actions
 on: [push, workflow_dispatch]
 jobs:
-  check-bats-version:
+  DEV:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
       - run: echo HELLO
 
+  QA:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo HELLO
+
+  UAT:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo HELLO
+
+  PROD:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo HELLO
